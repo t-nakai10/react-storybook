@@ -9,3 +9,5 @@ export default {
 };
 
 export const HelloButton = () => <Button>ハロー</Button>;
+
+export const ClickButton = () => <Button>クリック</Button>;
