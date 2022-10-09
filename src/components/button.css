@@ -1,0 +1,13 @@
+button {
+  font-size: 14px;
+  padding: 10px;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: inline;
+  color: white;
+}
+
+.default {
+  background: #6c757d;
+}

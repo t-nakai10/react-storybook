@@ -1,9 +1,10 @@
 import React from "react";
+import "./button.css";
 
-const Button = ({ children }) => {
+const Button = ({ children, color = "default" }) => {
   return (
     <div>
-      <button>{children}</button>
+      <button className={color}>{children}</button>
     </div>
   );
 };
