@@ -2,8 +2,8 @@ import Button from "./Button";
 
 // metadata を設定.
 export default {
-  // タイトル名.
-  title: "Button",
+  // タイトル名. 階層化もできる.
+  title: "Common/Button",
   // 対象のコンポーネント.
   component: Button,
 };
