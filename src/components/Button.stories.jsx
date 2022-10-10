@@ -8,6 +8,6 @@ export default {
   component: Button,
 };
 
-export const HelloButton = () => <Button>ハロー</Button>;
+export const Default = () => <Button>ハロー</Button>;
 
-export const ClickButton = () => <Button>クリック</Button>;
+export const Primary = () => <Button color="primary">クリック</Button>;

@@ -11,3 +11,7 @@ button {
 .default {
   background: #6c757d;
 }
+
+.primary {
+  background: #007bff;
+}
