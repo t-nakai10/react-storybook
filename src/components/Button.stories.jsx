@@ -11,5 +11,15 @@ export default {
 export const Default = () => <Button>ハロー</Button>;
 
 export const Primary = () => <Button color="primary">クリック</Button>;
+export const PrimarySmall = () => (
+  <Button color="primary" size="sm">
+    small
+  </Button>
+);
+export const PrimaryLarge = () => (
+  <Button color="primary" size="lg">
+    large
+  </Button>
+);
 
 export const Danger = () => <Button color="danger">Danger</Button>;
