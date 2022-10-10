@@ -8,18 +8,36 @@ export default {
   component: Button,
 };
 
-export const Default = () => <Button>ハロー</Button>;
+// より柔軟に対応するため Args を利用する.
+// テンプレート関数を準備. arg はコンポーネントに渡す props.
+const Template = (args) => <Button {...args} />;
+export const Default = Template.bind({});
+Default.args = {
+  children: "Default",
+};
 
-export const Primary = () => <Button color="primary">クリック</Button>;
-export const PrimarySmall = () => (
-  <Button color="primary" size="sm">
-    small
-  </Button>
-);
-export const PrimaryLarge = () => (
-  <Button color="primary" size="lg">
-    large
-  </Button>
-);
+export const Primary = Template.bind({});
+Primary.args = {
+  children: "Primary",
+  color: "primary",
+};
 
-export const Danger = () => <Button color="danger">Danger</Button>;
+export const PrimarySmall = Template.bind({});
+PrimarySmall.args = {
+  children: "Small",
+  color: "primary",
+  size: "sm",
+};
+
+export const PrimaryLarge = Template.bind({});
+PrimaryLarge.args = {
+  children: "Large",
+  color: "primary",
+  size: "lg",
+};
+
+export const Danger = Template.bind({});
+Danger.args = {
+  children: "Danger",
+  color: "danger",
+};
