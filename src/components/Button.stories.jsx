@@ -11,3 +11,5 @@ export default {
 export const Default = () => <Button>ハロー</Button>;
 
 export const Primary = () => <Button color="primary">クリック</Button>;
+
+export const Danger = () => <Button color="danger">Danger</Button>;

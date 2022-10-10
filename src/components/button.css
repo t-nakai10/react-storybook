@@ -15,3 +15,7 @@ button {
 .primary {
   background: #007bff;
 }
+
+.danger {
+  background-color: #dc3545;
+}
